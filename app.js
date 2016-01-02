@@ -10,7 +10,7 @@ app.set('view engine', 'jade');
 
 // index page 
 app.get('/', function(req, res) {
-  res.render('index');
+  res.render('index', { greeting: 'Express' });
   res.end;
 });
 
